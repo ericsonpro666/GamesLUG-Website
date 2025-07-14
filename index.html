@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GamesLUG</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body class="light-mode">
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="assets/fondo.mp4.mp4" type="video/mp4" /> Tu navegador no soporta la reproducción de videos.
+  </video>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">GamesLUG</div>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#donaciones">Donaciones</a>
+        <a href="#redes">Redes Sociales</a>
+        <button id="toggle-theme" class="theme-btn">🌙</button>
+        <div class="search-box">
+          <input type="text" id="buscador" placeholder="Buscar..." />
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="exclusivo">
+    <h2>⭐ Contenido Exclusivo</h2>
+    <div class="carrusel-exclusivo">
+      <div class="carrusel-inner">
+        <img src="assets/este.PNG" alt="Juego exclusivo 1" class="carrusel-item active" data-index="0" />
+        <img src="assets/sureste.PNG" alt="Juego exclusivo 2" class="carrusel-item" data-index="1" />
+        <img src="assets/oeste.PNG" alt="Juego exclusivo 3" class="carrusel-item" data-index="2" />
+      </div>
+      </div>
+  </section>
+
+  <section class="busqueda-modern">
+    <h2>Encuentra tu próximo juego favorito</h2>
+    <div class="buscador-principal">
+      <div class="input-con-icono">
+        <img src="assets/lupa.png" alt="Lupa" class="icono-lupa"> <input type="text" id="buscador-juegos" placeholder="Buscar por nombre" />
+      </div>
+      <button class="btn-buscar">Buscar</button>
+      <button class="btn-filtros">Filtros</button>
+    </div>
+    <div class="filtros-modern" id="filtros-dropdown-container">
+      <select>
+        <option>Categoría</option>
+        <option>PC</option>
+        <option>PC Apps</option>
+        <option>Android</option>
+        <option>Android Apps</option>
+        <option>Emuladores</option>
+        <option>ROMs</option>
+      </select>
+      <select>
+        <option>Género</option>
+        <option>Acción</option>
+        <option>Aventura</option>
+        <option>Terror</option>
+        <option>RPG</option>
+        <option>Indie</option>
+        <option>Multijugador</option>
+        <option>Bajo requisitos</option>
+        <option>Requisitos medios</option>
+        <option>Requisitos altos</option>
+      </select>
+    </div>
+
+ <section class="ultimas">
+  <h2>🆕 Últimas Publicaciones</h2>
+  <div class="juegos-lista">
+    <article class="juego clickable">
+      <img src="https://via.placeholder.com/150" alt="Resident Evil" />
+      <h3>Resident Evil 4 Remake</h3>
+      <a href="game-detail.html?id=resident-evil-4-remake" class="btn-download">Descargar</a>
+    </article>
+    <article class="juego clickable">
+      <img src="https://via.placeholder.com/150" alt="NFS Heat" />
+      <h3>Need for Speed Heat</h3>
+      <a href="game-detail.html?id=need-for-speed-heat" class="btn-download">Descargar</a>
+    </article>
+    <article class="juego clickable">
+      <img src="https://via.placeholder.com/150" alt="COD Mobile" />
+      <h3>Call of Duty Mobile APK</h3>
+      <a href="game-detail.html?id=call-of-duty-mobile" class="btn-download">Descargar</a>
+    </article>
+  </div>
+</section>
+</body>
+</html>

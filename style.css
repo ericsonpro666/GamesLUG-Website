@@ -1,0 +1,432 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Estilos de la Barra de Navegación */
+.navbar {
+  background: rgba(10, 46, 28, 0.85);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #72f58d;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.nav a,
+.theme-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.search-box input {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+/* Sección Exclusivo */
+.exclusivo {
+  text-align: center;
+  padding: 30px 20px;
+  background: transparent; /* Fondo transparente */
+  backdrop-filter: blur(4px);
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
+}
+
+.exclusivo h2 {
+  font-size: 2.5rem;
+  color: #72f58d;
+  margin-bottom: 15px;
+}
+
+/* Carrusel Interactivo - Contenedor principal */
+.carrusel-exclusivo {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 128, 0.3);
+  aspect-ratio: 16/9;
+}
+
+/* Contenedor interno de las imágenes del carrusel */
+.carrusel-inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Cada imagen del carrusel */
+.carrusel-item {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Estilos de la Sección de Búsqueda Moderna */
+.busqueda-modern {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 0 20px rgba(0, 255, 128, 0.2);
+}
+
+.busqueda-modern h2 {
+  font-size: 2.2rem;
+  color: #72f58d;
+  margin-bottom: 30px;
+}
+
+/* === NUEVOS ESTILOS PARA EL BUSCADOR PRINCIPAL === */
+.buscador-principal {
+  display: flex;
+  justify-content: center; /* Centra los elementos */
+  align-items: center;
+  background-color: #2e3034; /* Color de fondo oscuro como en la imagen */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 10px; /* Espacio interno */
+  gap: 10px; /* Espacio entre elementos */
+  max-width: 700px; /* Ancho máximo similar a la imagen */
+  margin: 0 auto 25px auto; /* Centrar y margen inferior */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+.input-con-icono {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Ocupa el espacio disponible */
+  background-color: #3f4247; /* Color de fondo del input */
+  border-radius: 6px; /* Bordes redondeados del input */
+  padding: 8px 12px;
+}
+
+.input-con-icono .icono-lupa {
+  width: 20px; /* Tamaño del icono */
+  height: 20px;
+  margin-right: 8px;
+  /* El filtro invierte colores. Si tu lupa.png ya es blanca/clara, puedes quitar esta línea */
+  filter: invert(1); /* Ejemplo: invierte a blanco si el icono es oscuro */
+}
+
+.buscador-principal input[type="text"] {
+  flex-grow: 1; /* Ocupa el espacio restante en el div */
+  border: none;
+  background: transparent;
+  color: #c9c9c9; /* Color del texto */
+  font-size: 1rem;
+  outline: none; /* Quita el contorno al hacer clic */
+  padding: 0; /* Reinicia el padding */
+}
+
+.buscador-principal input[type="text"]::placeholder {
+  color: #888; /* Color del placeholder */
+}
+
+.btn-buscar {
+  background-color: #007bff; /* Azul como en la imagen */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex; /* Para centrar el icono y texto si añades icono */
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-buscar:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+.btn-buscar::before {
+  content: url('assets/lupa_buscar.png'); /* Ruta a un icono de lupa para el botón Buscar */
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  filter: invert(1); /* Si el icono es oscuro, lo hace blanco */
+}
+
+.btn-filtros {
+  background-color: #3f4247; /* Gris oscuro como en la imagen */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex; /* Para centrar el icono y texto */
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-filtros:hover {
+  background-color: #55585d; /* Gris más claro al pasar el ratón */
+}
+
+.btn-filtros::before {
+  content: url('assets/icono_filtros.png'); /* Ruta a un icono de filtros para el botón Filtros */
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  filter: invert(1); /* Si el icono es oscuro, lo hace blanco */
+}
+/* === FIN NUEVOS ESTILOS PARA EL BUSCADOR PRINCIPAL === */
+
+
+/* Antiguos estilos de .filtros-modern */
+/* Elimina o comenta esta parte si aún la tienes:
+.filtros-modern {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.filtros-modern select {
+  padding: 12px 15px;
+  border-radius: 8px;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #444;
+  font-size: 1rem;
+  min-width: 150px;
+}
+*/
+
+/* === NUEVOS ESTILOS PARA EL CONTENEDOR DE FILTROS (EL QUE SE MUESTRA/OCULTA) === */
+#filtros-dropdown-container {
+  display: none; /* Oculto por defecto */
+  /* Estilos del panel cuando esté visible */
+  background-color: rgba(46, 48, 52, 0.95); /* Un fondo más oscuro para el panel */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px; /* Espacio entre el buscador principal y este panel */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para que destaque */
+  justify-content: center; /* Centra los selects dentro del panel */
+  gap: 20px; /* Espacio entre los selects */
+  flex-wrap: wrap; /* Permite que los selects pasen a la siguiente línea en pantallas pequeñas */
+  /* Transiciones para una aparición suave */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out, display 0.3s;
+}
+
+#filtros-dropdown-container.visible {
+  display: flex; /* Muestra el contenedor con flexbox */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos para los selectores de Categoría y Género dentro del panel */
+#filtros-dropdown-container select {
+  padding: 12px 15px;
+  border-radius: 8px;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #444;
+  font-size: 1rem;
+  min-width: 150px;
+  cursor: pointer;
+  outline: none;
+}
+/* === FIN NUEVOS ESTILOS PARA EL CONTENEDOR DE FILTROS === */
+
+/* El resto de tus estilos (navbar, carrusel, juegos, etc.) siguen igual */
+/* ... (asegúrate de que todo lo demás esté en tu style.css) ... */
+
+/* Estilos para Últimas Publicaciones */
+.ultimas {
+  padding: 20px;
+  background-color: rgba(0,0,0,0.5);
+  margin-top: 40px;
+}
+
+.ultimas h2 {
+    color: #72f58d;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.juegos-lista {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.juego {
+  background: rgba(255,255,255,0.1);
+  padding: 12px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  transition: transform 0.3s ease;
+}
+
+.juego:hover {
+    transform: translateY(-5px);
+}
+
+.juego img {
+  width: 100%;
+  border-radius: 6px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.juego h3 {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.juego a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #72f58d;
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.juego a:hover {
+    background-color: #5ae37b;
+}
+
+/* Estilos para el modo oscuro, si lo tienes implementado */
+body.dark-mode {
+  /* Define los estilos para el modo oscuro aquí */
+}
+/* Estilos para la página de detalle de juego (game-detail.html) */
+.game-detail-container {
+  max-width: 900px;
+  margin: 80px auto 40px auto; /* Espacio para el navbar y centrado */
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+  backdrop-filter: blur(8px); /* Efecto de desenfoque */
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 255, 128, 0.4);
+  color: #fff;
+  text-align: left;
+}
+
+.game-info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido */
+}
+
+.game-info-card h1 {
+  font-size: 3rem;
+  color: #72f58d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.game-main-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.game-description,
+.game-long-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.game-meta {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.game-meta p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.game-meta strong {
+  color: #72f58d;
+}
+
+.btn-download {
+  display: inline-block;
+  background-color: #007bff; /* Un azul vibrante */
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn-download:hover {
+  background-color: #0056b3;
+}

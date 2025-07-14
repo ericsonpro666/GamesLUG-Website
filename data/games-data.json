@@ -1,0 +1,41 @@
+[
+  {
+    "id": "resident-evil-4-remake",
+    "title": "Resident Evil 4 Remake",
+    "description": "Una reimaginación del icónico survival horror de 2005. Con gráficos actualizados y jugabilidad mejorada, los jugadores se sumergen de nuevo en la escalofriante misión de Leon S. Kennedy para rescatar a la hija del presidente. Prepárate para el terror, la acción intensa y los encuentros con los Ganados en esta entrega aclamada por la crítica.",
+    "long_description": "El clásico juego de terror de supervivencia Resident Evil 4 se reinventa para 2023, ofreciendo una experiencia visual impresionante y una jugabilidad modernizada. Únete a Leon S. Kennedy en su desesperada búsqueda de Ashley Graham en un remoto pueblo español invadido por una nueva amenaza. Con una narrativa profunda y enemigos reimaginados, esta versión ofrece una inmersión sin precedentes en el mundo aterrador de Resident Evil.",
+    "image_main": "https://via.placeholder.com/600x400/FF5733/FFFFFF?text=RE4",
+    "image_thumb": "https://via.placeholder.com/150",
+    "download_link": "#",
+    "category": "PC",
+    "genre": "Terror",
+    "requirements": "Requisitos altos",
+    "features": ["Un jugador", "Offline", "Remake"]
+  },
+  {
+    "id": "need-for-speed-heat",
+    "title": "Need for Speed Heat",
+    "description": "Un emocionante juego de carreras callejeras ambientado en Palm City. Compite en carreras sancionadas durante el día y arriésgate en desafíos ilegales por la noche. Escapa de la policía, personaliza tus vehículos y construye tu reputación en un mundo abierto lleno de velocidad y adrenalina.",
+    "long_description": "Need for Speed Heat te lleva a Palm City, una vibrante metrópolis que se transforma del paraíso de carreras diurnas a un campo de batalla nocturno contra una fuerza policial corrupta. Personaliza una amplia gama de coches, domina la carretera y hazte un nombre en la escena de las carreras clandestinas. Cada carrera es una oportunidad para ganar dinero o arriesgarlo todo en persecuciones de alto octanaje.",
+    "image_main": "https://via.placeholder.com/600x400/3366FF/FFFFFF?text=NFSH",
+    "image_thumb": "https://via.placeholder.com/150",
+    "download_link": "#",
+    "category": "PC",
+    "genre": "Carreras",
+    "requirements": "Requisitos medios",
+    "features": ["Un jugador", "Multijugador", "Mundo abierto"]
+  },
+  {
+    "id": "call-of-duty-mobile",
+    "title": "Call of Duty Mobile APK",
+    "description": "La experiencia Call of Duty en tu dispositivo móvil. Disfruta de modos multijugador clásicos como Team Deathmatch, Search & Destroy, y Battle Royale en mapas icónicos de la franquicia. Con controles personalizables y gráficos impresionantes, es la forma definitiva de jugar CoD sobre la marcha.",
+    "long_description": "Lleva la acción de Call of Duty a donde vayas con Call of Duty Mobile. Experimenta intensos modos multijugador y batallas Battle Royale épicas con gráficos de alta calidad y un rendimiento optimizado para dispositivos móviles. Desbloquea personajes, armas y skins, y compite contra jugadores de todo el mundo. El juego incluye soporte para clanes, eventos especiales y actualizaciones constantes para mantener la experiencia fresca y emocionante.",
+    "image_main": "https://via.placeholder.com/600x400/9933CC/FFFFFF?text=CODM",
+    "image_thumb": "https://via.placeholder.com/150",
+    "download_link": "#",
+    "category": "Android",
+    "genre": "Shooter",
+    "requirements": "Android",
+    "features": ["Multijugador", "Online", "Free-to-play"]
+  }
+]
